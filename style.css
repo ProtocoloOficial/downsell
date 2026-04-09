@@ -1,0 +1,102 @@
+:root {
+    --bg: #000000;
+    --card-bg: #111111;
+    --primary: #c7ff00;
+    --text-main: #ffffff;
+    --text-dim: #999999;
+    --border: #222222;
+    --alert: #ff4444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-green { color: var(--primary); }
+
+/* Progress Bar */
+.top-nav { padding: 25px 20px; border-bottom: 1px solid var(--border); background: #050505; }
+.progress-container { max-width: 500px; margin: 0 auto; text-align: center; }
+.progress-container p { font-size: 10px; font-weight: 800; color: var(--text-dim); margin-bottom: 10px; letter-spacing: 1px; }
+.progress-bar { width: 100%; height: 5px; background: #222; border-radius: 10px; }
+.progress-fill.final { width: 95%; height: 100%; background: var(--primary); box-shadow: 0 0 15px rgba(199, 255, 0, 0.4); }
+
+/* Main Content */
+.main-wrapper { display: flex; justify-content: center; align-items: center; padding: 60px 20px; min-height: 80vh; }
+.upsell-box { max-width: 900px; width: 100%; }
+.upsell-header { text-align: center; margin-bottom: 40px; }
+.offer-badge { background: #1a1a1a; color: var(--primary); padding: 6px 14px; border-radius: 50px; font-size: 11px; font-weight: 700; border: 1px solid var(--border); }
+.offer-badge.red { background: rgba(255, 68, 68, 0.1); color: var(--alert); border: 1px solid rgba(255, 68, 68, 0.2); }
+.upsell-header h1 { font-size: 36px; font-weight: 800; margin: 20px 0 12px; line-height: 1.1; }
+.upsell-header p { color: var(--text-dim); font-size: 16px; max-width: 650px; margin: 0 auto; line-height: 1.6; }
+
+.content-split { display: flex; gap: 30px; flex-wrap: wrap; }
+.benefits-side { flex: 1.2; min-width: 300px; }
+.card-item { background: var(--card-bg); padding: 25px; border-radius: 16px; margin-bottom: 15px; border: 1px solid var(--border); display: flex; gap: 18px; }
+.card-icon { font-size: 28px; }
+.card-info h3 { font-size: 17px; margin-bottom: 6px; }
+.card-info p { color: var(--text-dim); font-size: 14px; }
+
+.action-side { flex: 1; min-width: 300px; background: #080808; padding: 35px; border-radius: 20px; border: 1px solid var(--border); text-align: center; }
+.action-side.downsell-border { border: 1px solid var(--alert) !important; }
+
+.price-card { margin-bottom: 30px; }
+.price-title { font-size: 11px; font-weight: 700; color: var(--text-dim); }
+.price-flex { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 10px 0; }
+.old-price { font-size: 16px; color: var(--alert); text-decoration: line-through; }
+.new-price { font-size: 48px; font-weight: 800; color: var(--primary); }
+
+/* ESTILIZAÇÃO DOS BOTÕES - CORREÇÃO FINAL */
+.buttons-group { display: flex; flex-direction: column; gap: 15px; }
+
+.btn-primary {
+    background-color: var(--primary) !important; /* Força o Verde Neon */
+    color: #000000 !important;
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-sub {
+    font-size: 10px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(199, 255, 0, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent !important;
+    border: 1px solid #333 !important;
+    color: #666 !important;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    border-color: #555 !important;
+    color: #fff
