@@ -54,7 +54,7 @@ body {
 /* ESTILIZAÇÃO DOS BOTÕES CAKTO - SEM MIMIMI */
 .buttons-group { display: flex; flex-direction: column; gap: 15px; }
 
-.safe-footer { text-align: center; padding: 40px; font-size: 12px; color: #333; }
+.safe-footer { text-align: center; padding: 40px; font-size: 12px; color: #ffffff; }
 
 cakto-upsell-accept::part(button) {
     width: 100% !important;
